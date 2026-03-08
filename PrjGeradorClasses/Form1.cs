@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.CSharp;
 
-namespace CadastroLivros
+namespace PrjGeradorClasses
 {
     public partial class Form1 : Form
     {
@@ -95,18 +95,27 @@ namespace CadastroLivros
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string nomeClasse = textBox1.Text;
-            List<string> props = new List<string>();
-        
-            foreach(var propriedade in listBox1.Items){
-                props.Add(propriedade.ToString());
-            }
+            bool nomesIguais = listBox1.Items.Contains(textBox1.Text);
+            if (!nomesIguais)
+            {
+                string nomeClasse = textBox1.Text;
 
-            string resultado = GeradorClassesBLL.ValidaDados(nomeClasse, props);
-            
-            if (resultado == "Ok" && props.Count > 0) GeradorClasses.GerarClasse(nomeClasse, props,radioButton1.Checked); else MessageBox.Show(resultado);
-            
-            textBox1.Focus();
+                List<string> props = new List<string>();
+
+                foreach (var propriedade in listBox1.Items) {
+                    props.Add(propriedade.ToString());
+                }
+
+                string resultado = GeradorClassesBLL.ValidaDados(nomeClasse, props);
+
+                if (resultado == "Ok" && props.Count > 0) GeradorClasses.GerarClasse(nomeClasse, props, radioButton1.Checked); else MessageBox.Show(resultado);
+
+                textBox1.Focus();
+            }
+            else
+            {
+                MessageBox.Show("O nome da classe e da propriedade devem ser diferentes");
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)

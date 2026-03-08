@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace CadastroLivros
+namespace PrjGeradorClasses
 {
     public class GeradorClassesBLL
     {

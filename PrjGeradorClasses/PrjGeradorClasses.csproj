@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C4B3D440-65A8-4B73-B356-AD57E7B458DA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>CadastroLivros</RootNamespace>
-    <AssemblyName>CadastroLivros</AssemblyName>
+    <RootNamespace>PrjGeradorClasses</RootNamespace>
+    <AssemblyName>PrjGeradorClasses</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

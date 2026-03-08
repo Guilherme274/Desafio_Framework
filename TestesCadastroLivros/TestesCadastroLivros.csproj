@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CadastroLivros\CadastroLivros.csproj">
+    <ProjectReference Include="..\PrjGeradorClasses\PrjGeradorClasses.csproj">
       <Project>{c4b3d440-65a8-4b73-b356-ad57e7b458da}</Project>
-      <Name>CadastroLivros</Name>
+      <Name>PrjGeradorClasses</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

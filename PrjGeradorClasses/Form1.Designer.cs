@@ -1,4 +1,4 @@
-﻿namespace CadastroLivros
+﻿namespace PrjGeradorClasses
 {
     partial class Form1
     {

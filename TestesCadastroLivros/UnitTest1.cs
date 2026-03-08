@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using CadastroLivros;
 using System.Collections.Generic;
+using PrjGeradorClasses;
 
 namespace TestesCadastroLivros
 {
